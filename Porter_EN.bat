@@ -34,7 +34,7 @@ tools\cecho                       {0e}Select An Option :
 echo.
 tools\cecho                 {0d}+============================+
 echo.
-tools\cecho                   {0c}1. Crossport AOSP (BETA)        
+tools\cecho             {0c}1. Crossport AOSP (BETA)(NOT FINISHED)        
 echo.
 tools\cecho                    {0b}2.  Same chipset Port          
 echo.
@@ -45,7 +45,7 @@ if "%web%"=="1" goto caosp
 if "%web%"=="2" goto main2
 cls
 
-:main
+:main3
 tools\cecho  {0b}
 echo.
 title Fastport -- Working...
@@ -62,6 +62,10 @@ tools\andimgtool "%~dp0put_system.img_and_boot.img_here\boot.img" put_system.img
 echo.
 tools\cecho  {0e}
 echo.
+goto main
+
+:main
+title Fastport -- Working...
 echo Porting...
 copy files\tools\pq "%~dp0put_system.img_and_boot.img_here\system\tools\pq"
 copy files\tools\vold "%~dp0put_system.img_and_boot.img_here\system\tools\vold"
@@ -106,10 +110,12 @@ echo ______________________
 echo.
 echo 1. Port system.img
 echo 2. Port system.new.dat
+echo 3. Port system folder
 echo ______________________
 set /p web=Type option:
-if "%web%"=="1" goto main
+if "%web%"=="1" goto main3
 if "%web%"=="2" goto dat
+if "%web%"=="3" goto main
 
 :dat
 title Fastport -- Convert system.new.dat
