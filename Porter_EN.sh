@@ -108,16 +108,13 @@ mainmenu(){
  echo ""
  echo                 +============================+
  echo ""
- echo             1. Crossport AOSP [BETA][NOT FINISHED]        
- echo ""
- echo                     2.  Same chipset Port          
+ echo                     1.  Same chipset Port          
  echo ""
  echo ""
  printf %s "Type option:"
  read option
  case $option in
-  1) caosp;;
-  2) scport;;
+  1) scport;;
   *) invalidopt;;
  esac
 }
