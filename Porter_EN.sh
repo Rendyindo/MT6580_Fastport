@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-#
-# DO NOT EXECUTE THIS FILE
-# NOT FINISHED
-# ITS STILL A BLANK FILE :P
