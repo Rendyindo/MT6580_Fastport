@@ -13,6 +13,5 @@ Still WIP!
 3. Follow the instructions
 
 # Linux
-Not for now, i'm still working for this
-
+Go to Linux branch :p
 More to come...
