@@ -34,15 +34,12 @@ tools\cecho                       {0e}Select An Option :
 echo.
 tools\cecho                 {0d}+============================+
 echo.
-tools\cecho             {0c}1. Crossport AOSP (BETA)(NOT FINISHED)        
-echo.
-tools\cecho                    {0b}2.  Same chipset Port          
+tools\cecho                    {0b}1.  Same chipset Port          
 echo.
 echo.
 tools\cecho   {0a}
 set /p web=Type option:
-if "%web%"=="1" goto caosp
-if "%web%"=="2" goto main2
+if "%web%"=="1" goto main2
 cls
 
 :main3
