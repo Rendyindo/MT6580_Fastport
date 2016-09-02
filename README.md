@@ -8,11 +8,11 @@ Still WIP!
 # Installation
 
 # Windows
-1. Download the repo
-2. Open up the .bat file
-3. Follow the instructions
+Go to master branch :p
 
 # Linux
-Not for now, i'm still working for this
+1. Clone the repo
+2. ./Porter_EN.sh
+3. Follow on Terminal instruction.
 
 More to come...
