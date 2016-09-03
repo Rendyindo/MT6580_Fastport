@@ -90,6 +90,7 @@ echo "- Done!"
 }
 
 mainmenu(){
+ clear
  echo "Fastport for Infinix Hot 2"
  echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  echo +          For system.new.dat, put system.transfer.list too                   +
