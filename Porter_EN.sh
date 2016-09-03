@@ -26,9 +26,7 @@ caosp(){
 scport(){
 clear
 echo ""
-echo          **********************
-echo          *  SAME CHIPSET PORT * 
-echo          **********************
+echo          SAME CHIPSET PORT
 echo ""
 echo ""
 echo ______________________
@@ -99,7 +97,6 @@ mainmenu(){
  echo + 2. Press anything in the keyboard :3                                        +
  echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  echo +                  Made by RendyAK @ Ambaradul Team                           +
- echo +        Redesigned by Nana Iyke Quame @ Android Matrix Development           +
  echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  echo Warning!
  echo This will remove old rom, system, maded by this Fastport!
