@@ -12,7 +12,7 @@ Go to master branch :p
 
 # Linux
 1. Clone the repo
-2. ./Porter_EN.sh
+2. . Porter_EN.sh
 3. Follow on Terminal instruction.
 
 More to come...
