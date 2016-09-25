@@ -6,6 +6,55 @@ goto start
 
 :home
 cls
+echo "Select Device:"
+echo "1. Infinix Hot 2"
+echo "2. Evercoss Winner Y Power"
+set /p web=Type option:
+if "%web%"=="1" goto home2
+if "%web%"=="2" goto home1
+
+:home1
+cls
+set device=evas
+echo.
+tools\cecho               {0e}
+echo.
+echo                      -----------------------------------
+echo                        Fastport Evercoss Winner Y Power
+echo                      -----------------------------------
+echo.
+tools\cecho                       {0b}*INSTRUCTIONS TO FOLLOW*
+echo.
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+echo +          For system.new.dat, put system.transfer.list too                   +
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+echo + 1. Put system.img and boot.img at folder put_system.img_and_boot.img_here   +
+echo + 2. Press anything in the keyboard :3                                        +
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+echo +                  Made by RendyAK @ Ambaradul Team                           +
+echo +        Redesigned by Nana Iyke Quame @ Android Matrix Development           +
+echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+echo.
+tools\cecho  {0c}
+echo Warning!
+echo This will remove old rom, system, maded by this Fastport!
+echo.
+echo.
+tools\cecho                       {0e}Select An Option : 
+echo.
+tools\cecho                 {0d}+============================+
+echo.
+tools\cecho                    {0b}1.  Same chipset Port          
+echo.
+echo.
+tools\cecho   {0a}
+set /p web=Type option:
+if "%web%"=="1" goto main2
+cls
+
+:home2
+cls
+set device=ih2
 echo.
 tools\cecho               {0e}
 echo.
@@ -64,11 +113,11 @@ goto main
 :main
 title Fastport -- Working...
 echo Porting...
-copy files\tools\pq "%~dp0put_system.img_and_boot.img_here\system\tools\pq"
-copy files\tools\vold "%~dp0put_system.img_and_boot.img_here\system\tools\vold"
-copy files\lib "%~dp0put_system.img_and_boot.img_here\system\lib"
-copy files\zImage "%~dp0put_system.img_and_boot.img_here\boot\kernel\zImage"
-copy files\fstab.mt6580 "%~dp0put_system.img_and_boot.img_here\boot\ramdisk\fstab.mt6580"
+copy files\%device%\bin\pq "%~dp0put_system.img_and_boot.img_here\system\bin\pq"
+copy files\%device%"\bin\vold "%~dp0put_system.img_and_boot.img_here\system\bin\vold"
+copy files\%device%"\lib "%~dp0put_system.img_and_boot.img_here\system\lib"
+copy files\%device%"\zImage "%~dp0put_system.img_and_boot.img_here\boot\kernel\zImage"
+copy files\%device%"\fstab.mt6580 "%~dp0put_system.img_and_boot.img_here\boot\ramdisk\fstab.mt6580"
 echo.
 tools\cecho  {0d}
 echo.
